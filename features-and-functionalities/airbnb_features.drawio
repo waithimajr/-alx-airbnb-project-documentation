@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="airbnb-features" name="Airbnb Features">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="u1" value="Authentication &amp; Authorization
+- Register/login (JWT)
+- Password reset
+- Roles: guest/host/admin" style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="260" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u2" value="User Management
+- Profile CRUD
+- Host onboarding
+- Soft delete" style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450" vertex="1" parent="1">
+          <mxGeometry x="340" y="40" width="240" height="100" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u3" value="Property Management
+- CRUD listings
+- Photos, amenities
+- Search/filter" style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="300" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u4" value="Booking System
+- Create/availability
+- Lifecycle (pending/confirmed)
+- Pricing & cancellations" style="rounded=1;fillColor=#fff2cc;strokeColor=#d79b00" vertex="1" parent="1">
+          <mxGeometry x="380" y="180" width="300" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u5" value="Payments &amp; Payouts
+- Stripe/PayPal
+- Charge/capture/refund
+- Webhooks" style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="300" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u6" value="Reviews &amp; Ratings
+- Create & moderate
+- Aggregate scores" style="rounded=1;fillColor=#f5f5f5;strokeColor=#999999" vertex="1" parent="1">
+          <mxGeometry x="380" y="360" width="300" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u7" value="Messaging &amp; Notifications
+- Conversations
+- Email/push/websocket" style="rounded=1;fillColor=#ffd1dc;strokeColor=#ff6f91" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="300" height="80" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="u8" value="Admin &amp; Monitoring
+- Moderation tools
+- Metrics, logs, backups" style="rounded=1;fillColor=#d6e9ff;strokeColor=#4a90e2" vertex="1" parent="1">
+          <mxGeometry x="380" y="480" width="300" height="100" as="geometry"/>
+        </mxCell>
+
+        <!-- Simple connectors -->
+        <mxCell id="c1" edge="1" parent="1" source="u1" target="u2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c2" edge="1" parent="1" source="u3" target="u4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="c3" edge="1" parent="1" source="u4" target="u5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;endArrow=none;html=1;">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
